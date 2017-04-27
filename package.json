@@ -1,0 +1,19 @@
+{
+  "name": "server-sent-events",
+  "version": "1.0.0",
+  "description": "Project to study SSE",
+  "main": "app.js",
+  "scripts": {
+    "start": "babel-node ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Falk Beier",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-node6": "^11.0.0"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}

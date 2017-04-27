@@ -1,0 +1,18 @@
+<!DOCTYPE>
+<html>
+  <head>
+
+    <script>
+      var source = new EventSource('/events');
+      source.onmessage = function(eventFromServer) {
+        var eventParsed = JSON.parse(eventFromServer.data);
+        document.getElementById("results").innerHTML += '<p>Msg: ' + eventParsed.msg + '</p>';
+      };
+    </script>
+  </head>
+
+  <body>
+    <div id="results">
+    </div>
+  </body>
+</html>
